@@ -40,7 +40,7 @@ const options = {
   onClose(selectedDates) {
     console.log(selectedDates[0]);
     if (selectedDates[0] < Date.now()) {
-      alert('Choose the day in the future');
+      window.alert('Please choose a date in the future');
     } else {
       btnStart.disabled = false;
     }
